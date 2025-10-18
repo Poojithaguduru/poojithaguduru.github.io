@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Poojitha Guduru • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f1220; --card:#171a2b; --ink:#e8ecff; --muted:#aab2d5; --accent:#7aa2ff; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 10% -10%, #1b2040 0%, #0f1220 60%), var(--bg); color:var(--ink); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:32px}
+    header{display:flex;flex-direction:column;gap:16px;margin-top:24px;margin-bottom:28px}
+    .name{font-size:32px;font-weight:800;letter-spacing:0.3px}
+    .tag{color:var(--muted);font-size:15px}
+    .bar{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent); color:#04122b; padding:10px 14px; border-radius:10px; font-weight:600; display:inline-block}
+    .btn.secondary{background:#2a3156; color:var(--ink)}
+    section{background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent); border:1px solid #272b46; border-radius:16px; padding:20px; margin:16px 0}
+    h2{margin:0 0 10px 0; font-size:20px; letter-spacing:.2px}
+    p{margin:8px 0 0 0; color:#dbe1ff; line-height:1.65}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+    .card{background:var(--card); border:1px solid #272b46; border-radius:14px; padding:16px}
+    .small{color:var(--muted); font-size:14px}
+    footer{color:var(--muted); font-size:13px; margin:24px 0 10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="name">Poojitha Guduru</div>
+      <div class="tag">Data & Analytics • SQL • Python • BI (Power BI, Tableau) • Cloud (GCP/AWS)</div>
+      <div class="bar">
+        <a class="btn" href="#" target="_blank" rel="noopener">Download Résumé</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/poojitha-guduru" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/Poojithaguduru" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>I’m a data professional who loves turning messy, multi-source data into clean models, metrics, and dashboards that drive decisions. My toolkit spans SQL, Python, modern BI, and cloud data warehouses. I’ve worked across healthcare, insurance, and digital products.</p>
+    </section>
+
+    <section>
+      <h2>Experience (highlights)</h2>
+      <ul>
+        <li><b>Data Engineer Intern – Jobsforce.ai</b> · Built end-to-end GCP pipelines (Pub/Sub, Dataflow, BigQuery), revenue data marts (CAC/LTV/NRR), and quality checks; reduced refresh latency and costs.</li>
+        <li><b>Business Intelligence Data Analyst – Acko Health Insurance</b> · Modeled claims/premiums in BigQuery; automated ETL; delivered fraud/anomaly detection and KPI dashboards in Power BI.</li>
+        <li><b>Business Analyst (Volunteer) – Guardian’s Embrace</b> · Power BI with RLS, automated refresh, and governance; improved transparency and reporting accuracy.</li>
+      </ul>
+      <p class="small">Tip: you can expand these into bullet lists later.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <b>Heart Health Analysis</b>
+          <p class="small">ML pipeline to predict heart disease risk (LogReg, RF) with EDA and feature analysis.</p>
+          <p><a href="https://github.com/Poojithaguduru/Heart-Health-Analysis" target="_blank" rel="noopener">View project →</a></p>
+        </div>
+        <div class="card">
+          <b>Online Shopping Data Analysis</b>
+          <p class="small">Exploratory analysis of e-commerce transactions in Python/SQL—segments, trends, drivers.</p>
+          <p><a href="https://github.com/Poojithaguduru/Online-Shopping-Data-Analysis" target="_blank" rel="noopener">View project →</a></p>
+        </div>
+        <div class="card">
+          <b>SmartClaimMate (IBM Watson)</b>
+          <p class="small">RAG-powered assistant for claim denial analysis and appeal drafting.</p>
+          <p><a href="https://github.com/Poojithaguduru/SMARTCLAIMATE-IBM-Watson" target="_blank" rel="noopener">View project →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:poojithaguduru9@gmail.com">poojithaguduru9@gmail.com</a></p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Poojitha Guduru
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
